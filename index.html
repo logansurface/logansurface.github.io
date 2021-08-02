@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+        <meta charset="utf-8">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <meta author="Logan Surface">
+        <title>Logan Surface</title>
+
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <header class="container_navbar noselect">
+                <a class="navtitle">Logan Surface</a>
+                <button class="navbutton" onclick="togglePage('home')">Home</button>
+                <button class="navbutton" onclick="togglePage('blog')">Blog</button>
+                <button class="navbutton" onclick="togglePage('portfolio')">Portfolio</button>
+                <button class="navbutton" onclick="togglePage('contact')">Contact</button>
+            </header>
+
+            <main class="container_main">
+                <article id="home">
+                    This site serves to provide interested parties with a convenient method to
+                    explore my capabilities. Within, information can be found in regards to my
+                    projects and work history. If further information is required, you can
+                    reach out to me via the button below.
+                </article>
+
+                <article id="blog">
+                    <p>Blog</p>
+                </article>
+
+                <article id="portfolio">
+                    <p>Portfolio</p>
+                </article>
+
+                <article id="contact">
+                    <p id="email">email: surfacelogan@gmail.com</p>
+                    <p id="phone">phone: (817)-905-4134</p>
+                </article>
+            </main>
+
+            <footer class="container_footer noselect">
+                <p>Copyright - Logan Surface, 2021</p>
+            </footer>
+        </div>
+    <script>
+        function togglePage(pageName) {
+            var toggledElem = document.getElementById(pageName);
+
+            if(toggledElem.style.display === "none") {
+                toggledElem.style.display = "block";
+            }
+            else {
+                toggledElem.style.display = "none";
+            }
+        }
+    </script>
+    </body>
+</html>

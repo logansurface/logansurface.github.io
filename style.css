@@ -1,0 +1,73 @@
+:root {
+    --bg-color: #2f343b;
+    --secondary-color: #c77966;
+    --tertiary-color: #7e827a;
+    --text-color: #e3cda4;
+    --focus-color: #703030;
+}
+
+body {
+    margin: 0;
+    background: var(--bg-color);
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: bold;
+    color: var(--text-color);
+}
+
+.container_navbar,
+.container_footer {
+    flex-shrink: 0;
+}
+
+.container_navbar {
+    background: var(--secondary-color);
+}
+
+.navtitle {
+    font-size: xx-large;
+    line-height: 60pt;
+    margin: 0pt 190pt 0pt 20pt;
+}
+
+.navbutton {
+    font-size: large;
+    color: var(--text-color);
+    padding: 8pt;
+
+    background: none;
+    border: none;
+    text-decoration: none;
+}
+
+.navbutton:hover,
+.navbutton:active {
+    color: var(--focus-color);
+}
+
+.container_main {
+    flex-grow: 1;
+    flex-basis: 100%;
+    text-align: center;
+    padding: 0pt 60pt 0pt 60pt;
+}
+
+.container_footer {
+    padding: 5pt;
+    background: var(--tertiary-color);
+}
+
+.noselect {
+    -webkit-touch-callout: none;    /* iOS Safari */
+    -webkit-user-select: none;      /* Safari */
+    -khtml-user-select: none;       /* Konqueror HTML */
+    -moz-user-select: none;         /* Old versions of Firefox */
+    -ms-user-select: none;          /* Internet Explorer/Edge */
+    user-select: none;              /* Supported by Chrome, Edge, Opera and Firefox */
+}
